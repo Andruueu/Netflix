@@ -1,0 +1,26 @@
+summary::after {
+  content: "+";
+  position: absolute;
+  right: 20px;
+  font-size: 70px;
+  bottom: 0px;
+  font-weight: lighter;
+}
+
+details[open] > summary::after {
+  transform: rotate(45deg);
+  right: 15px;
+}
+
+.card {
+  width: 200px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.custom-outline {
+  -webkit-text-stroke: 5px #fff;
+}
